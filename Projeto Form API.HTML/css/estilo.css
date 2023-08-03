@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Configuração Universal */
+* {
+    margin: 0;
+    padding: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #262727;
+    --primary-color: #ebce07;
+}
+
+/* Configuração da Página */
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Configuração do Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    width: 50%;
+    padding: 20px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 45px;
+    text-align: center;
+    color: var(--bg-color);
+    background-color: #ebce07;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.row {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 40px;
+    position: relative;
+    color: #ebce07;
+}
+
+.inputbox label {
+    font-size: 18px;
+    top: 0;
+    left: 10px;
+    position: relative;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    border: none;
+    box-shadow: none;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.inputbox input:hover {
+    background-color: #d6d5d5;
+    transition: 0.5s;
+}
+
+
+
+footer {
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    border: #ebce07 solid 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    justify-self: center;
+    text-shadow: 0 2px 1px black solid;
+    transition: 0.6s;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transition: 0.6s;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
