@@ -73,14 +73,14 @@ body {
     font-size: 15px;
     border-radius: 8px;
     font-weight: bold;
+    transition: 0.5s; 
+    outline: 0;
 }
 
 .inputbox input:hover {
     background-color: #d6d5d5;
     transition: 0.5s;
 }
-
-
 
 footer {
     color: var(--bg-color);
